@@ -6,6 +6,14 @@
 
 ## Кодстайл
 
-[.vscode/settings.json]() - общие настройки
-[eslint.config.js]() - линтер
-[.prettierrc]() - форматирование
+- [.vscode/settings.json](https://github.com/Niki96434/deploy-cli/blob/main/.vscode/settings.json) - общие настройки
+- [eslint.config.js](https://github.com/Niki96434/deploy-cli/blob/main/eslint.config.js) - линтер
+- [.prettierrc](https://github.com/Niki96434/deploy-cli/blob/main/.prettierrc) - форматирование
+
+## Запуск
+
+Чтобы запустить в консоли:
+
+```
+deploy
+```
