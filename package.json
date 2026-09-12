@@ -1,0 +1,32 @@
+{
+  "name": "deploy-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "deploy.ts",
+  "bin": {
+    "deploy": "./deploy.ts"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Niki96434/deploy-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Niki96434/deploy-cli/issues"
+  },
+  "homepage": "https://github.com/Niki96434/deploy-cli#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^22.20.2",
+    "eslint": "^10.10.0",
+    "typescript": "^7.0.2"
+  }
+}
