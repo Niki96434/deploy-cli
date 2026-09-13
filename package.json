@@ -2,9 +2,9 @@
   "name": "deploy-cli",
   "version": "1.0.0",
   "description": "",
-  "main": "deploy.ts",
+  "main": "deploy.js",
   "bin": {
-    "deploy": "./build/deploy.ts"
+    "orbit": "./build/deploy.js"
   },
   "scripts": {
     "build": "tsc",
@@ -28,7 +28,7 @@
   "homepage": "https://github.com/Niki96434/deploy-cli#readme",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@types/node": "^22.20.2",
+    "@types/node": "^26.5.1",
     "eslint": "^10.10.0",
     "eslint-config-prettier": "^10.1.8",
     "prettier": "3.9.6",

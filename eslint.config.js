@@ -14,7 +14,7 @@ export default defineConfig([
     rules: {
       'no-unused-vars': 'warn',
       'prefer-const': 'warn',
-      'no-console': 'warn',
+      'no-undef': 'off',
     },
     ignores: ['node_modules/', '.git/', './.gitignore'],
   },
