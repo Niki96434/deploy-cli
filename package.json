@@ -4,9 +4,10 @@
   "description": "",
   "main": "deploy.ts",
   "bin": {
-    "deploy": "./deploy.ts"
+    "deploy": "./build/deploy.ts"
   },
   "scripts": {
+    "build": "tsc",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prettier": "prettier . --write",
