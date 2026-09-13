@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import { parseArgs, type ParseArgsOptionsType } from 'node:util';
+import build from './build.js';
 
 const options = {
   build: {
@@ -26,7 +27,7 @@ tokens
   .forEach(token => {
     switch (token.name) {
       case 'build':
-        console.log('build');
+        build();
         break;
       case 'connect':
         console.log('connect');
