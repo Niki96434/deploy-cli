@@ -1,6 +1,11 @@
 #!/usr/bin/env node
 import { parseArgs } from 'node:util';
 const options = {
+    build: {
+        type: 'boolean',
+        multiple: false,
+        short: 'b',
+    },
     connect: {
         type: 'boolean',
         multiple: false,
@@ -12,7 +17,21 @@ const options = {
         short: 'd',
     },
 };
-const { values } = parseArgs({ options });
-console.log(values);
-console.log('Ты запустил в первый раз свою утилиту!');
+const { tokens } = parseArgs({ options, tokens: true });
+tokens
+    .filter(token => token.kind === 'option')
+    .forEach(token => {
+    if (token.name === 'build') {
+        console.log('build');
+    }
+    else if (token.name === 'connect') {
+        console.log('connect');
+    }
+    else if (token.name === 'deploy') {
+        console.log('deploy');
+    }
+    else {
+        console.log('такой команды нет');
+    }
+});
 //# sourceMappingURL=deploy.js.map

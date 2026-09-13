@@ -10,16 +10,40 @@
 - [eslint.config.js](https://github.com/Niki96434/deploy-cli/blob/main/eslint.config.js) - линтер
 - [.prettierrc](https://github.com/Niki96434/deploy-cli/blob/main/.prettierrc) - форматирование
 
-## Запуск
-
-Чтобы запустить в консоли:
-
-```
-orbit
-```
-
 ## Быстрый старт:
 
+### Сборка проекта
+
+```
+orbit --build
 ```
 
+или
+
+```
+orbit -b
+```
+
+### Подключиться к серверу
+
+```
+orbit --connect
+```
+
+или
+
+```
+orbit -c
+```
+
+### Копировать билд проекта на сервер
+
+```
+orbit --deploy
+```
+
+или
+
+```
+orbit -d
 ```

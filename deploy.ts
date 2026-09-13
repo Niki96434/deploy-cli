@@ -2,6 +2,11 @@
 import { parseArgs, type ParseArgsOptionsType } from 'node:util';
 
 const options = {
+  build: {
+    type: 'boolean',
+    multiple: false,
+    short: 'b',
+  },
   connect: {
     type: 'boolean',
     multiple: false,
@@ -14,6 +19,22 @@ const options = {
   },
 } as const;
 
-const { values } = parseArgs({ options });
-console.log('Ты запустил в первый раз свою утилиту!');
-console.log(values);
+const { tokens } = parseArgs({ options, tokens: true });
+
+tokens
+  .filter(token => token.kind === 'option')
+  .forEach(token => {
+    switch (token.name) {
+      case 'build':
+        console.log('build');
+        break;
+      case 'connect':
+        console.log('connect');
+        break;
+      case 'deploy':
+        console.log('deploy');
+        break;
+      default:
+        console.log('такой команды нет');
+    }
+  });
