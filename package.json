@@ -2,9 +2,9 @@
   "name": "deploy-cli",
   "version": "1.0.0",
   "description": "",
-  "main": "deploy.js",
+  "main": "main.js",
   "bin": {
-    "orbit": "./build/deploy.js"
+    "orbit": "./build/main.js"
   },
   "scripts": {
     "build": "tsc",
