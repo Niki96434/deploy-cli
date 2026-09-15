@@ -33,5 +33,6 @@ export default async function build(): Promise<void> {
     });
   } else {
     console.log('Отмена запуска сборки');
+    process.exit(0);
   }
 }

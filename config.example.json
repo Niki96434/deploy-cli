@@ -1,0 +1,9 @@
+{
+  "server": {
+    "creds": {
+      "host": "192.168.1.10",
+      "user": "root",
+      "keyPath": "/home/username/.ssh/id_ed25519"
+    }
+  }
+}

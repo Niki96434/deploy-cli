@@ -2,6 +2,7 @@
 import { parseArgs } from 'node:util';
 import build from './build.js';
 import { options } from './args.js';
+import connect from './connect.js';
 
 function main() {
   try {
@@ -15,7 +16,7 @@ function main() {
             await build();
             break;
           case 'connect':
-            console.log('connect');
+            await connect();
             break;
           case 'deploy':
             console.log('deploy');
@@ -26,6 +27,7 @@ function main() {
       });
   } catch (err) {
     console.log(err);
+    process.exit(1);
   }
 }
 
